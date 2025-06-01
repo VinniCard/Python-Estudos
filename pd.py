@@ -86,7 +86,7 @@ df2.describe()
 
 ## ------------------------------------------------------------------------------------------------------------------------------
 
-## Silicing de DataFrames do Pandas
+## Slicing de DataFrames do Pandas
 
 df2 = [df2['Estado2': 'Estado4']]
 
