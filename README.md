@@ -24,3 +24,16 @@ Introdução a Biblioteca Pandas (pd);
 - Split de Strings em DataFrames do Pandas (.str.split() ) e Strip de Strings (.str.lstrip() )
 - Replace de String em DataFrames do Pandas
 - Combinação de String em DataFrames do pandas (.str.cat(), sep =))
+
+Introdução a vizualização de dados com as Bibliotecas Matplotlib e Seaborn;
+
+- Criação de gráficos a partir de listas (plt.xlabel , plt.ylabel, plt.title, plt.show() )
+- Criação de gráficos de barra (plt.bar)
+- Criação de gráficos de dispersão (plt.scatter, color = "", marker = "" )
+- Criação de gráficos de área empilhada (plt.stackplot)
+- Criação de gráficos de pizza (plt.pie, startangle = "", explode = "" )
+- Criação de gráficos de linha (plt.plot)
+- Criação de eixos, figuras e gráficos em paralelo
+- Criação de histogramas
+- Criação de gráficos com Seaborn (joinplot, lmplot, kdeplot, hist, distplot, violinplot, clustermap)
+  
