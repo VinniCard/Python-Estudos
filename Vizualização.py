@@ -152,13 +152,13 @@ x5 = np.linspace(0, 5, 10)
 y5 = x5 ** 2
 
 ## Cria a figura
-fig = plt.figure()
+fig = plt.figure() ## Figura é o todo, nele pode ter vários axes
 
 ## Define a escala dos eixos
-axes = fig.add_axes([0, 0, 0.8, 0.8])
+axes = fig.add_axes([0, 0, 0.8, 0.8]) ## -> axes é o espaço onde o gráfico acontece
 
 ## Cria o plot
-axes.plot(x5 ,y5, 'r')
+axes.plot(x5 ,y5, 'r') 
 
 # Labels e título
 axes.set_xlabel('x')
@@ -170,10 +170,10 @@ axes.set_title('Gráfico de Linha')
 x5 = np.linspace(0, 5, 10)
 y5 = x5 ** 2
 
-fig = plt.figure()
+fig = plt.figure() ## Figura é o todo, nele pode ter vários axes
 
-axes1 = fig.add_axes([0.1, 0.1, 0.8, 0.8])
-axes2 = fig.add_axes([0.2, 0.5, 0.4, 0.3])
+axes1 = fig.add_axes([0.1, 0.1, 0.8, 0.8]) ## -> axes é o espaço onde o gráfico acontece
+axes2 = fig.add_axes([0.2, 0.5, 0.4, 0.3]) ## -> axes é o espaço onde o gráfico acontece
 
 axes1.plot(x5, y5, 'r')
 axes1.set_xlabel('x')
@@ -190,7 +190,7 @@ axes2.set_title('Figura Secundária')
 x5 = np.linspace(0, 5, 10)
 y5 = x5 ** 2
 
-fig, axes = plt.subplots(nrows = 1, ncols = 2)
+fig, axes = plt.subplots(nrows = 1, ncols = 2) ## -> usado quando trabalhado com mais de 1 gráfico em uma figura
 
 for ax in axes:
     ax.plot(x5, y5, 'r')
@@ -206,7 +206,7 @@ x5 = np.linspace(0, 5, 10)
 y5 = x5 ** 2
 
 ## Subplots
-fig, axes = plt.subplots(1, 2, figsize=(10,4))
+fig, axes = plt.subplots(1, 2, figsize=(10,4)) ## -> usado quando trabalhado com mais de 1 gráfico em uma figura
 
 ## Plot 1
 axes[0].plot(x5, x5 **2, x5, np.exp(x5))
@@ -224,7 +224,7 @@ axes[1].set_title('Escala Logaritimica (y)')
 x5 = np.linspace(0, 5, 10)
 y5 = x5 ** 2
 
-fig, axes = plt.subplots(1, 2, figsize=(10,3))
+fig, axes = plt.subplots(1, 2, figsize=(10,3)) ## -> usado quando trabalhado com mais de 1 gráfico em uma figura
 
 ## Grid padrão
 axes[0].plot(x5, x5 **2, x5, lw = 2)
@@ -246,7 +246,7 @@ axes[1].grid(color = 'b', alpha = 0.7, linestyle = 'dashed', linewidth = 0.8)
 
 n = np.random.randn(100000)
 
-fig, axes = plt.subplots(1, 2, figsize = (12,4)) ## -> 1 linha e 2 colunas
+fig, axes = plt.subplots(1, 2, figsize = (12,4)) ## -> 1 linha e 2 colunas ## -> usado quando trabalhado com mais de 1 gráfico em uma figura
 
 ## Plot 1
 
